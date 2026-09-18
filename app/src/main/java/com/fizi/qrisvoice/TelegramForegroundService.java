@@ -8,8 +8,9 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.speech.tts.TextToSpeech;
 
-import androidx.core.app.NotificationCompat;
-
+Notification notification =
+        new Notification.Builder(this, CHANNEL_ID)
+    
 import org.json.JSONArray;
 import org.json.JSONObject;
 
