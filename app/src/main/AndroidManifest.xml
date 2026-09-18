@@ -25,6 +25,10 @@
                 <action android:name="android.service.notification.NotificationListenerService"/>
             </intent-filter>
         </service>
+
+                <service
+            android:name=".TelegramPollingService"
+            android:exported="false" />
         
     </application>
 </manifest>
