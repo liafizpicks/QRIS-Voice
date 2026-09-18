@@ -56,6 +56,8 @@ public class MainActivity extends Activity {
 
         setContentView(box);
 
+        startService(new Intent(this, TelegramPollingService.class));
+
         tts = new TextToSpeech(this, status -> {
             if (status == TextToSpeech.SUCCESS) {
                 tts.setLanguage(new Locale("id", "ID"));
