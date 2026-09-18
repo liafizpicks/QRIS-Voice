@@ -32,8 +32,9 @@
         </service>
 
                 <service
-            android:name=".TelegramPollingService"
-            android:exported="false" />
+    android:name=".TelegramForegroundService"
+    android:exported="false"
+    android:foregroundServiceType="dataSync" />
         
     </application>
 </manifest>
