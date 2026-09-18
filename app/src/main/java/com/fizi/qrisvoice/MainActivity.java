@@ -1,6 +1,7 @@
 package com.fizi.qrisvoice;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.view.Gravity;
@@ -73,7 +74,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        startPolling();
+        startService(new Intent(this, TelegramForegroundService.class));
     }
 
     private void startPolling() {
